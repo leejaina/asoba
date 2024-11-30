@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asoba Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Asoba Keyboard</h1>
+            <p class="copyright">© 2024 인공언어 2조 asoba. Licensed under CC BY-NC-ND 4.0</a></p>
+        </header>
+
+        <!-- 입력 및 출력 영역 -->
+        <div class="main">
+            <!-- 입력칸 -->
+            <textarea id="input-area" placeholder="병음을 입력하세요..."></textarea>
+            <!-- 출력칸 -->
+            <div id="output-area"></div>
+        </div>
+
+        <!-- 버튼 -->
+        <div class="buttons">
+            <button id="copy-button">복사</button>
+            <button id="save-button">이미지 저장</button>
+        </div>
+
+        <!-- 사용법 -->
+        <aside>
+            <h2>사용법</h2>
+            <!-- 텍스트와 이미지를 감싸는 컨테이너 -->
+            <div class="usage-container">
+                <div class="usage-text">
+                    <p>병음을 입력하면 글자가 나타납니다:</p>
+                    <ul>
+                        <li>자음: p, b, m, l, s, ʒ(는 j로 쓰세요.), d, t, n, k, g, h</li>
+                        <li>모음: a, o, i, e, u</li>
+                        <li>대문자 M, G, N: ≡첨자(아래, 중앙, 위)</li>
+                    </ul>
+                </div>
+                <!-- 사용법 이미지를 추가 -->
+                <img src="images/usage-guide.jpg" alt="사용법 상세 이미지" id="usage-image">
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
